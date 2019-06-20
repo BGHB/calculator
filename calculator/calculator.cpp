@@ -15,30 +15,42 @@ Calculator::~Calculator()
 
 int Calculator::run(Input usrInput)
 {
-	
+	switch (usrInput.op)
+	{
+	case '+':
+		return add(usrInput.a, usrInput.b);
+	case '-':
+		return add(usrInput.a, usrInput.b);
+	case '*':
+		return add(usrInput.a, usrInput.b);
+	case '/':
+		return add(usrInput.a, usrInput.b);
+	default:cout << "²Ù×÷·ûÊäÈë´íÎó£¡" << endl;
+		break;
+	}
 	return 0;
 }
 
 int Calculator::add(int a, int b) const
 {
-
-	return 0;
+	int c = a + b;
+	return c;
 }
 
 int Calculator::sub(int a, int b) const
 {
-
-	return 0;
+	int c = a - b;
+	return c;
 }
 
 int Calculator::mul(int a, int b) const
 {
-
-	return 0;
+	int c = a * b;
+	return c;
 }
 
 int Calculator::div(int a, int b) const
 {
-
-	return 0;
+	int c = a / b;
+	return c;
 }

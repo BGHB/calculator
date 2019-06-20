@@ -16,4 +16,4 @@ typedef struct
  * 
  * @return 解析后的结构体
  */
-Input praseStr(std::string str);
+Input praseStr(std::string str) ;
