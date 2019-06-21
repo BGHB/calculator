@@ -20,11 +20,11 @@ int Calculator::run(Input usrInput)
 	case '+':
 		return add(usrInput.a, usrInput.b);
 	case '-':
-		return add(usrInput.a, usrInput.b);
+		return sub(usrInput.a, usrInput.b);
 	case '*':
-		return add(usrInput.a, usrInput.b);
+		return mul(usrInput.a, usrInput.b);
 	case '/':
-		return add(usrInput.a, usrInput.b);
+		return div(usrInput.a, usrInput.b);
 	default:cout << "²Ù×÷·ûÊäÈë´íÎó£¡" << endl;
 		break;
 	}

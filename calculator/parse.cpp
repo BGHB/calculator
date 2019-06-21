@@ -12,7 +12,26 @@ Input praseStr(string str)
 	string backgroud="";
 	string op = "";
 	string::size_type position;
-	position = str.find('+');
+	if (str.find('+')<str.length())
+	{
+		position = str.find('+');
+	}
+	else if (str.find('-')<str.length())
+	{
+		position = str.find('-');
+	}
+	else if(str.find('*')<str.length())
+	{
+		position = str.find('*');
+	}
+	else if (str.find('/')<str.length())
+	{
+		position = str.find('/');
+	}
+	else
+	{
+		cout << "您所输入的字符中没有操作符"  << endl;
+	}
 	front = str.substr(0, position);
 	backgroud = str.substr(position+1, str.length());
 	op = str.substr(position);
