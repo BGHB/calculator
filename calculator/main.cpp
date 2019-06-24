@@ -10,11 +10,19 @@ int main()
 {
 	Calculator hCalculator;
 	string str;
-	cout << "输入计算公式" << endl;
-	cin >> str;
-	Input usrInput = praseStr(str);
-	int result = hCalculator.run(usrInput);
-	cout << str << "=" << result << endl;
+	string inputstr;
+	//cout << "输入计算公式" << endl;
+	//cin >> str;
+	do
+	{
+		cout << "请输入计算公式" << endl;
+		cin >> str;
+		Input usrInput = praseStr(str);
+		int result = hCalculator.run(usrInput);
+		cout << str << "=" << result << endl;
+		cout << "是否继续计算？yes or no ?" << endl;
+		cin >> inputstr;
+	} while (inputstr == "yes");
 	system("pause");
     return 0;
 }
